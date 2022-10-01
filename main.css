@@ -11,7 +11,8 @@ main {
 .mail {
 
     height: 100vh;
-    /* border: 1px solid greenyellow; */
+    border: 1px solid greenyellow;
+    width: 10vw;
 }
 
 section {
@@ -25,15 +26,15 @@ section {
     row-gap: 10px;
     border: 1px solid rgb(125, 141, 100);
     padding: 10px;
-    width: 80vw;
-
+    width: 73vw;
+    /* z-index: 2; */
 }
 
 .intro {
 
     /* border: 1px solid greenyellow; */
 
-    position: relative;
+    /* position: relative; */
     top: 2em;
 
 }
@@ -90,6 +91,17 @@ section {
     /* border: 2px solid red; */
 
 }
+
+@media (max-width: 39.5em) {
+    .text {
+        font: 1em 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', system-ui, sans-serif;
+        border: 2px solid red;
+        /* width: 10vw; */
+        color: #ffffff;
+        opacity: 70%;
+    }
+}
+
 
 /* .about {
 
