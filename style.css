@@ -10,11 +10,12 @@
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     color: #fff;
+    word-wrap: break-word;
 }
 
 body {
     background-color: var(--navy);
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
 
 ::-webkit-scrollbar {
@@ -54,11 +55,11 @@ header {
     align-items: center;
     justify-content: space-between;
     width: 99.8vw;
-    /* box-shadow: 0 5px 50px #020b1977; */
-    position: relative;
-    /* z-index: 5000; */
     backdrop-filter: blur(0.5rem);
+    position: relative;
 }
+
+
 
 .fixed-top {
     position: fixed;
@@ -72,11 +73,13 @@ header {
     display: none;
 }
 
-.primary-navigation {
+.primary-navigation,
+ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
+
 
 .primary-navigation a {
     text-decoration: none;
@@ -108,22 +111,37 @@ header {
 
 
 @media (max-width: 39.5em) {
+    header {
+        position: relative;
+    }
+
     .primary-navigation {
-        z-index: 1000;
+        z-index: 3000;
         --gap: 3em;
-        position: fixed;
+        position: absolute;
         inset: 0 0 0 40%;
         /* inset is used for logical inline from the end sides*/
         flex-direction: column;
         /* we can use the min funtion so that the padding will be chosen based on how the device screen is */
         padding: min(10vh, 6rem) 2em;
-        background: hsl(0 0% 10% /0.2);
-        transform: translateX(100%);
+        background: rgba(0, 0, 0, 0.86);
+        opacity: 1;
+        height: 70vh;
         transition: transform 0.7s ease-out;
+        backdrop-filter: blur(1);
     }
 
     .primary-navigation[data-visible='true'] {
-        transform: translateX(0%);
+
+        opacity: 1;
+        /* border: 2px solid red; */
+
+    }
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
     }
 
     .mobile-nav-toggle {
@@ -132,7 +150,7 @@ header {
         width: 2rem;
         aspect-ratio: 1;
         top: 2.6rem;
-        right: 2rem;
+        right: 0.3rem;
         z-index: 9999;
         background: url('assets/icon-hamburger.svg');
         background-repeat: no-repeat;
@@ -150,7 +168,6 @@ header {
 @media(min-width: 39.5em) {
     .primary-navigation {
         padding: 2em;
-
     }
 }
 
@@ -163,6 +180,10 @@ header {
 
     .primary-navigation a>span[aria-hidden='true'] {
         display: none;
+    }
+
+    ul {
+        display: flex;
     }
 
 }
