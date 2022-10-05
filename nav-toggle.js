@@ -1,4 +1,5 @@
-const primNav = document.querySelector('.primary-navigation');
+
+const primNav = document.querySelector('.out-header');
 const navToggle = document.querySelector('.mobile-nav-toggle');
 
 //data- is used in js to manipulate the css using it
@@ -11,21 +12,29 @@ navToggle.addEventListener('click', () => {
     }
     else if (visi === "true") {
         primNav.setAttribute('data-visible', false)
-
         navToggle.setAttribute('aria-expanded', false)
     }
-
+    console.log("hi")
 })
 
-// let prevScroll = window.scrollY
-// let navbar = document.querySelector(".primary-header")
-// document.addEventListener("scroll", function () {
+let tabHead = document.getElementsByClassName('tab-header')[0]
 
-//     console.log(prevScroll)
-//     let val = window.scrollY || document.documentElement.scrollTop;
-//     console.log(val)
-//     if (val < prevScroll) {
-//         navbar.classList.add("fixed-top");
-//     }
-//     prevScroll = val <= 0 ? 0 : val;
-// });
+let tabIndi = document.querySelector('.indicator')
+
+let tabBody = document.querySelector('.tab-body')
+let tabPane =
+    tabHead.getElementsByTagName("div")
+
+for (let i = 0; i < tabPane.length; i++) {
+    tabPane[i].addEventListener("click", () => {
+
+        tabHead.getElementsByClassName("active")[0].classList.remove("active");
+        tabPane[i].classList.add("active");
+
+
+        tabBody.getElementsByClassName("active")[0].classList.remove("active");
+        tabBody.getElementsByTagName("div")[i].classList.add("active");
+
+        tabIndi.style.left = `calc(calc(100%/3) * ${i})`;
+    })
+}
