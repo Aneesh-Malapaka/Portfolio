@@ -105,10 +105,10 @@ ul {
 
 
 .LogoSvg {
-    width: 50%;
-    width: 4.95rem;
-    /* height: 6s.25rem; */
+    width: 20%;
+    height: 20%;
     cursor: pointer;
+
 }
 
 
@@ -192,6 +192,14 @@ ul {
 
     .out-header {
         display: none;
+    }
+
+    header {
+        position: sticky;
+        top: -1px;
+        left: 0;
+        z-index: 10000;
+        width: 100vw;
     }
 }
 
