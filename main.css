@@ -647,6 +647,7 @@ section {
         gap: 10px;
         width: 100%;
         color: var(--light-slate);
+        margin-bottom:10px;
     }
 
     .tab-header>div {
