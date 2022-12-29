@@ -412,6 +412,11 @@ section {
         background-position: center;
     }
 
+    .pro5 {
+        background: url("./assets/WebMainPic2.PNG");
+        background-position: left;
+
+    }
     .pro--card {
         position: relative;
         flex-direction: column;
