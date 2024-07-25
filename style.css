@@ -10,7 +10,6 @@
     font-family: Poppins, sans-serif;
     box-sizing: border-box;
     /* color: #fff; */
-    word-wrap: break-word;
 }
 
 body {
@@ -29,6 +28,14 @@ body {
     border-radius: 10px;
 }
 
+.tab-header::-webkit-scrollbar {
+    height: 5px; 
+}
+
+.tab-header::-webkit-scrollbar-thumb {
+    background: #3ed498;
+    border-radius: 10px;
+}
 
 .sr-only {
     position: absolute;
@@ -108,10 +115,8 @@ ul {
     width: 20%;
     height: 20%;
     cursor: pointer;
-
+    margin: 10px 0 0 10px;
 }
-
-
 
 @media (max-width: 39.5em) {
     header {

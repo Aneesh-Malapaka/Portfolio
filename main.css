@@ -171,9 +171,48 @@ section {
     color: aquamarine
 }
 
+
+.highlight {
+    color: aquamarine;
+}
+.pro1 {
+    background: url("assets/op3.PNG");
+    background-position: top;
+}
+
+.pro2 {
+    background: url("assets/op4.PNG");
+    background-position: center;
+}
+
+.pro3 {
+    background: url("assets/op2.PNG");
+    background-position: bottom 10px left -10px;
+}
+
+.pro4 {
+    background: url("assets/op1.PNG");
+    background-position: center;
+
+}
+
+.pro5 {
+    background: url("./assets/WebMainPic2.PNG");
+    background-position: left;
+
+}
+.pro6{
+    background: url("assets/raithuBotImage.png");
+    background-position: top;
+}
+.pro7{
+    background: url("assets/TourrificOp.png");
+    background-position: top;
+}
+
 /* large screens start */
-/* for devices with greater than 632px */
-@media (min-width:39.6em) {
+/* for devices with greater than 65em */
+@media (min-width:65em) {
     /* intro starts */
 
     .intro {
@@ -242,7 +281,6 @@ section {
         color: #A7ACB9;
     }
 
-
     .abt--box p {
         color: #A7ACB9;
     }
@@ -303,16 +341,9 @@ section {
 
     .tab-header>div.active {
         color: #3ed498;
-    }
-
-    .indicator {
-        background: #3ed498;
-        position: relative;
-        width: calc(97%/3);
-        height: 5px;
-        border-radius: 15px;
-        transition: left 0.5s ease;
-        left: 0;
+        border-bottom: 4px solid;
+        border-radius: 3px;
+        padding-bottom: 10px;
     }
 
     .tabs .tab-body {
@@ -389,34 +420,6 @@ section {
         width: 100.5%;
         height: 100.5%;
         opacity: 0.9;
-    }
-
-
-    .pro1 {
-        background: url("assets/op3.PNG");
-        background-position: top;
-    }
-
-    .pro2 {
-        background: url("assets/op4.PNG");
-        background-position: center;
-    }
-
-    .pro3 {
-        background: url("assets/op2.PNG");
-        background-position: bottom 10px left -10px;
-    }
-
-    .pro4 {
-        background: url("assets/op1.PNG");
-        background-position: center;
-
-    }
-
-    .pro5 {
-        background: url("./assets/WebMainPic2.PNG");
-        background-position: left;
-
     }
 
     .pro--card {
@@ -505,12 +508,8 @@ section {
     .footer--text a:hover {
         color: #3ed498;
     }
-
+    
     /* footer ends */
-}
-
-.highlight {
-    color: aquamarine;
 }
 
 /* for devices less than 632px */
@@ -647,13 +646,15 @@ section {
     }
 
     .tab-header {
-        height: 5vh;
+        /* height: 5vh; */
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        gap: 20px;
         width: 100%;
         color: var(--light-slate);
+        overflow-x: scroll;
+        padding-bottom: 20px;
     }
 
     .tab-header>div {
@@ -663,22 +664,11 @@ section {
         font-size: 14px;
         text-transform: capitalize;
         font-weight: 600;
-        word-wrap: wrap;
-
+        word-wrap: normal !important;
     }
 
     .tab-header>div.active {
         color: #3ed498;
-    }
-
-    .indicator {
-        background: #3ed498;
-        position: relative;
-        width: calc(97%/3);
-        height: 5px;
-        border-radius: 15px;
-        transition: left 0.5s ease;
-        left: 0;
     }
 
     .tabs .tab-body {
@@ -867,6 +857,9 @@ section {
         color: var(--lighter-slate);
     }
 
+    .footer--text {
+        font-size: 0.7em;
+    }
     .footer--text a {
         text-decoration: none;
         color: none;
@@ -883,12 +876,12 @@ section {
 @media (min-width:39.7em) and (max-width:65em) {
 
     .number--heading>[aria-hidden="true"] {
-        font-size: 4vw;
+        font-size: 1.2em;
         color: aquamarine
     }
 
     .number--heading {
-        font-size: 4vw;
+        font-size: 1.2em;
     }
 
 
@@ -908,37 +901,37 @@ section {
 
     /* intro start */
     .start {
-        font-size: 3vw;
+        font-size: 1.2em;
         font-family: 'SF mono', 'Fira Code', 'Fira Mono', 'Roboto Mono', monospace;
         color: rgb(98, 250, 199);
         font-weight: 400;
     }
 
     .name {
-        font-size: 6vw;
+        font-size:2.4em;
         font-weight: 500;
         width: 100%;
         color: var(--lighter-slate);
     }
 
     .sec {
-        font-size: 4vw;
-        line-height: 0.2vh;
+        font-size: 1.3rem;
+        line-height: 1.1vh;
         font-weight: bold;
     }
 
     .text {
-        font: 3vw 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', system-ui, sans-serif;
+        font: 1.3em 'Calibre', 'Inter', 'San Francisco', 'SF Pro Text', system-ui, sans-serif;
         font-weight: 600;
         color: var(--slate);
         margin-top: 30px;
-        line-height: 3vh;
+        line-height: 5vh;
         width: 65vw;
     }
 
     .resume {
         margin-top: 100px;
-        font-size: 3vw;
+        font-size: 1.3em;
         width: 50vw;
         transform: scale(0.8);
     }
@@ -959,7 +952,7 @@ section {
     .abt--text {
         flex-direction: column;
         gap: 5vh;
-        font-size: 2.4vw;
+        font-size: 1.02em;
     }
 
     .abt--box ul {
@@ -1004,7 +997,6 @@ section {
     /* experience starts */
     .experience {
         height: 93%;
-        border: 2px solid red;
     }
 
     .tabs {
@@ -1017,11 +1009,12 @@ section {
     }
 
     .tab-header {
-        height: 5vh;
+        
+        height: 12vh;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 10px;
+        gap: 40px;
         width: 100%;
         color: var(--light-slate);
     }
@@ -1039,16 +1032,6 @@ section {
 
     .tab-header>div.active {
         color: #3ed498;
-    }
-
-    .indicator {
-        background: #3ed498;
-        position: relative;
-        width: calc(97%/3);
-        height: 5px;
-        border-radius: 15px;
-        transition: left 0.5s ease;
-        left: 0;
     }
 
     .tabs .tab-body {
@@ -1169,16 +1152,16 @@ section {
     }
 
     .pro--card>h3 {
-        font-size: 4vw;
+        font-size: 1.4em;
     }
 
     .pro--card>.pro--desc {
-        font-size: 3vw;
+        font-size:1em ;
     }
 
     .tech--stack {
         letter-spacing: 3px;
-        font-size: 2vw;
+        font-size:1em ;
     }
 
     .links a svg {
@@ -1204,7 +1187,7 @@ section {
     }
 
     .con--box .con--title {
-        font-size: 8vw;
+        font-size: 3em;
     }
 
     .hello--box {
@@ -1242,7 +1225,7 @@ section {
     }
 
     .footer--text {
-        font-size: 3vw;
+        font-size: 1em;
     }
 
     .footer--text a {
