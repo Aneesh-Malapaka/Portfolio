@@ -748,27 +748,6 @@ section {
         opacity: 0.9;
     }
 
-
-    .pro1 {
-        background: url("assets/op3.PNG");
-        background-position: top;
-    }
-
-    .pro2 {
-        background: url("assets/op4.PNG");
-        background-position: center;
-    }
-
-    .pro3 {
-        background: url("assets/op2.PNG");
-        background-position: bottom 10px left -10px;
-    }
-
-    .pro4 {
-        background: url("assets/op1.PNG");
-        background-position: center;
-    }
-
     .pro--card {
         position: relative;
         flex-direction: column;
@@ -1113,27 +1092,6 @@ section {
         width: 100.5%;
         height: 100.5%;
         opacity: 0.9;
-    }
-
-
-    .pro1 {
-        background: url("assets/op3.PNG");
-        background-position: top;
-    }
-
-    .pro2 {
-        background: url("assets/op4.PNG");
-        background-position: center;
-    }
-
-    .pro3 {
-        background: url("assets/op2.PNG");
-        background-position: bottom 10px left -10px;
-    }
-
-    .pro4 {
-        background: url("assets/op1.PNG");
-        background-position: center;
     }
 
     .pro--card {
