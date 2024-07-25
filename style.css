@@ -58,8 +58,6 @@ body {
     gap: var(--gap, 1rem);
 }
 
-
-
 header {
     /* border: 2px solid red; */
     align-items: center;
