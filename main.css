@@ -175,6 +175,7 @@ section {
 .highlight {
     color: aquamarine;
 }
+
 .pro1 {
     background: url("assets/op3.PNG");
     background-position: top;
@@ -201,13 +202,26 @@ section {
     background-position: left;
 
 }
-.pro6{
+
+.pro6 {
     background: url("assets/raithuBotImage.png");
     background-position: top;
 }
-.pro7{
+
+.pro7 {
     background: url("assets/TourrificOp.png");
     background-position: top;
+}
+
+.pro8 {
+    background: url("assets/image.png");
+    background-position: center;
+}
+
+.pro9 {
+    background: url("assets/tequbit.jpg");
+    background-position: center;
+    background-size: unset !important;
 }
 
 /* large screens start */
@@ -508,7 +522,7 @@ section {
     .footer--text a:hover {
         color: #3ed498;
     }
-    
+
     /* footer ends */
 }
 
@@ -839,6 +853,7 @@ section {
     .footer--text {
         font-size: 0.7em;
     }
+
     .footer--text a {
         text-decoration: none;
         color: none;
@@ -887,7 +902,7 @@ section {
     }
 
     .name {
-        font-size:2.4em;
+        font-size: 2.4em;
         font-weight: 500;
         width: 100%;
         color: var(--lighter-slate);
@@ -988,7 +1003,7 @@ section {
     }
 
     .tab-header {
-        
+
         height: 12vh;
         display: flex;
         align-items: center;
@@ -1114,12 +1129,12 @@ section {
     }
 
     .pro--card>.pro--desc {
-        font-size:1em ;
+        font-size: 1em;
     }
 
     .tech--stack {
         letter-spacing: 3px;
-        font-size:1em ;
+        font-size: 1em;
     }
 
     .links a svg {
